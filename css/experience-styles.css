@@ -1,0 +1,122 @@
+/*
+ * All of the sections are ordered by how abstract they are (high -> low),
+ * the contents of each section is ordered based on the order the elements
+ * occur in the index html document. The contents of each block is ordered in
+ * lexigraphical order.
+ */
+/* General Element Styling */
+:root {
+  --scale-height: 10px;
+  --scale-width: 25vw;
+  --language-icon-height: 50px;
+  --language-icon-width: 50px;
+}
+
+/* Element Class Styling */
+.display-area {
+  width: 100%;
+}
+
+.ability-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ability {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+
+.ability > * {
+  margin: 5px;
+}
+
+.ability-icon {
+  height: var(--language-icon-height);
+  width: var(--language-icon-height);
+}
+
+.scale {
+  background: var(--primary);
+  border-radius: 500px;
+  height: var(--scale-height);
+  width: var(--scale-width);
+}
+
+.scale-value {
+  background: var(--accent1);
+  border-radius: 500px;
+  height: var(--scale-height);
+}
+
+/* Element ID Styling */
+#nav-button-2 {
+  filter: brightness(110%);
+}
+
+#abilities {
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./../images/experience/Abilities-Background.webp") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--nav-bar-height));
+  justify-content: center;
+  width: 100%;
+}
+
+#abilities > * {
+  margin: 20px;
+}
+
+#c-scale {
+  width: 90%;
+}
+
+#html-scale {
+  width: 90%;
+}
+
+#css-scale {
+  width: 75%;
+}
+
+#js-scale {
+  width: 30%;
+}
+
+#java-scale {
+  width: 80%;
+}
+
+#react-scale {
+  width: 10%;
+}
+
+#linux-scale {
+  width: 80%;
+}
+
+#java-scale {
+  width: 90%;
+}
+
+#maven-scale {
+  width: 60%;
+}
+
+#git-scale {
+  width: 80%;
+}
+
+#sql-scale {
+  width: 75%;
+}
+
+/* Mobile Support*/
+@media screen and (max-width: 900px) {}

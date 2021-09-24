@@ -1,0 +1,109 @@
+/*
+ * All of the sections are ordered by how abstract they are (high -> low),
+ * the contents of each section is ordered based on the their lexigraphical
+ * order. The contents of each block is ordered in lexigraphical order.
+ */
+
+/* Global Element Styling */
+* {
+  box-sizing: border-box;
+  font-family: Ariel;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent1: #EEEEEE;
+  --accent2: orange;
+  --primary: #303030;
+  --secondary: #3A3A3A;
+
+  --nav-bar-height: 60px;
+}
+
+/* General Element Styling */
+body {
+  background: var(--secondary);
+  min-width: 310px;
+}
+
+hr {
+  color: var(--accent1);
+}
+
+html {
+  min-width: 310px;
+}
+
+h1, p {
+  color: var(--accent1);
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--accent2);
+}
+
+nav {
+  align-items: center;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Element Class Styling */
+.button {
+  align-items: center;
+  background: var(--primary);
+  border-radius: 500px;
+  color: var(--accent2);
+  display: flex;
+  font-weight: bolder;
+  height: 50px;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  width: 225px;
+}
+
+.button:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+
+.container {
+  text-align: center;
+}
+
+.nav-button {
+  background: var(--primary);
+  color: var(--accent1);
+  display: inline-block;
+  font-size: 12pt;
+  padding: 20.5px;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  filter: brightness(120%);
+}
+
+.profile-icon {
+  height: 100%;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.profile-icon-button {
+  border-radius: 100%;
+  display: block;
+  height: var(--nav-bar-height);
+}
+
+.profile-icon-button:hover {
+  filter: brightness(80%);
+}
