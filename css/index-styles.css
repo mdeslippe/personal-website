@@ -14,6 +14,7 @@ header {
   flex-direction: column;
   height: calc(100vh - var(--nav-bar-height));
   justify-content: center;
+  width: 100%;
 }
 
 /* Element Class Styling */
@@ -84,7 +85,7 @@ header {
 }
 
 /* Mobile Support*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
   /* Element Class Styling */
   .information-sub-container {
@@ -109,4 +110,5 @@ header {
   #contact {
     flex-direction: column;
   }
+  
 }

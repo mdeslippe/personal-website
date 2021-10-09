@@ -15,24 +15,38 @@
 :root {
   --accent1: #EEEEEE;
   --accent2: orange;
+  --accent3: #000000;
+  --nav-bar-height: 60px;
   --primary: #303030;
   --secondary: #3A3A3A;
-
-  --nav-bar-height: 60px;
 }
 
 /* General Element Styling */
 body {
+  align-items: center;
   background: var(--secondary);
+  display: flex;
+  flex-direction: column;
   min-width: 310px;
+}
+
+body header, body main, body section, body hr, body nav {
+  max-width: 1920px;
 }
 
 hr {
   color: var(--accent1);
+  width: 100%;
 }
 
 html {
-  min-width: 310px;
+  min-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
 }
 
 h1, p {
@@ -48,6 +62,7 @@ nav {
   background-color: var(--primary);
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 nav div {
