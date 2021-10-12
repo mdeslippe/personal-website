@@ -24,6 +24,8 @@
 /* General Element Styling */
 body {
   align-items: center;
+  animation: fadeInAnimation ease 2s;
+  animation-fill-mode: forwards;
   background: var(--secondary);
   display: flex;
   flex-direction: column;
@@ -121,4 +123,15 @@ nav div {
 
 .profile-icon-button:hover {
   filter: brightness(80%);
+}
+
+/* Animations */
+@keyframes fadeInAnimation {
+    0% {
+        background: black;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
