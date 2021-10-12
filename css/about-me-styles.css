@@ -71,17 +71,27 @@
   background: var(--secondary);
   border: solid var(--accent3) 1px;
   display: flex;
-  flex-direction: column;
   height: 200px;
-  justify-content: space-around;
+  justify-content: center;
   margin: 2.5%;
   min-height: fit-content;
-  padding: 2.5%;
   width: calc(100% / 3 - 5%);
 }
 
 .project:hover {
   filter: brightness(120%);
+}
+
+.project-btn {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-around;
+  padding: 2.5%;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
 }
 
 /* Element ID Styling */
@@ -93,9 +103,9 @@
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./../images/about-me/Abilities-Background.webp") center no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  height: fit-content;
   min-height: calc(100vh - var(--nav-bar-height));
   padding: 2.5% 0;
   width: 100%;

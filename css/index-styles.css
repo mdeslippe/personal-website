@@ -52,8 +52,8 @@ header {
   min-height: fit-content;
 }
 
-#about .information-picutre {
-  background: url("./../images/index/About-Me-Picture.webp") no-repeat;
+#introduction .information-picutre {
+  background: url("./../images/index/Introduction-Picture.webp") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -64,8 +64,8 @@ header {
   background-size: cover;
 }
 
-#work .information-picutre {
-  background: url("./../images/index/Work-Picture.jpg") no-repeat;
+#experience .information-picutre {
+  background: url("./../images/index/Experience-Picture.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -110,5 +110,5 @@ header {
   #contact {
     flex-direction: column;
   }
-  
+
 }
