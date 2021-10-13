@@ -1,0 +1,32 @@
+/*
+ * All of the sections are ordered by how abstract they are (high -> low),
+ * the contents of each section is ordered based on the order the elements
+ * occur in the index html document. The contents of each block is ordered in
+ * lexigraphical order.
+ */
+/* General Element Styling */
+:root {
+  --form-max-width: 600px;
+  --form-width: 50vw;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../images/contact-me/Wallpaper.jpg") center no-repeat;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Element Class Styling */
+
+/* Element ID Styling */
+#nav-button-3 {
+  filter: brightness(110%);
+}

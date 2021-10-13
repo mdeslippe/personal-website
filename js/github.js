@@ -14,7 +14,7 @@ function createRepositoryEntry(repository) {
   let a = document.createElement("a");
   a.classList.add("project-btn");
   a.setAttribute("href", repository.html_url);
-  a.setAttribute("alt", "My, " + " GitHub projects");
+  a.setAttribute("alt", "My, " + " GitHub project");
 
   let h2 = document.createElement("h2");
   h2.appendChild(document.createTextNode(name));
@@ -49,7 +49,7 @@ function displayGitHubRepositories(user, element, ownerOnly) {
           continue;
         else
           element.appendChild(createRepositoryEntry(repositories[i]));
-
+          
     });
 
 }
