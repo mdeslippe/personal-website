@@ -1,9 +1,3 @@
-/*
- * All of the sections are ordered by how abstract they are (high -> low),
- * the contents of each section is ordered based on the their lexigraphical
- * order. The contents of each block is ordered in lexigraphical order.
- */
-
 /* Global Element Styling */
 * {
   box-sizing: border-box;

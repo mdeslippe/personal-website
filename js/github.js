@@ -1,3 +1,5 @@
+let approvedRepositories = ["mdeslippe", "personal-website", "java-discord-api", "grade-calculator", "java-mysql-utility"];
+
 /**
  * Create a single repository display.
  * @param {Object} repository The repository to display.
@@ -44,11 +46,13 @@ function displayGitHubRepositories(user, element, ownerOnly) {
     .then(response => response.json())
     .then(repositories => {
 
-      for (i = 0; i < repositories.length; i++)
-        if (ownerOnly && repository.owner.login != user)
+      for (i = 0; i < repositories.length; i++) {
+        if (ownerOnly && repositories.owner.login != user)
           continue;
-        else
-          element.appendChild(createRepositoryEntry(repositories[i]));
+
+        if (approvedRepositories.includes(repositories[i].name))
+        element.appendChild(createRepositoryEntry(repositories[i]));
+      }
           
     });
 

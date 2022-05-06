@@ -1,9 +1,3 @@
-/*
- * All of the sections are ordered by how abstract they are (high -> low),
- * the contents of each section is ordered based on the order the elements
- * occur in the index html document. The contents of each block is ordered in
- * lexigraphical order.
- */
 /* General Element Styling */
 :root {
   --form-max-width: 600px;
@@ -18,15 +12,45 @@ body {
 main {
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../images/contact-me/Wallpaper.jpg") center no-repeat;
+  background-size: cover;
   display: flex;
   height: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
+  min-height: 250px;
 }
 
 /* Element Class Styling */
+.contact-btn {
+  width: 200px;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+}
+
+.contact-img {
+  width: 200px;
+}
 
 /* Element ID Styling */
 #nav-button-3 {
   filter: brightness(110%);
+}
+
+/* Mobile Support*/
+@media screen and (max-width: 800px) {
+
+  main {
+    flex-direction: column;
+    min-height: fit-content;
+  }
+
+  .contact-img, .contact-btn {
+    width: 20vh;
+    height: 20vh;
+  }
+
 }
